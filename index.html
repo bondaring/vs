@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+</head>
+<body>
+  <script>
+    let now = new Date();
+    let date = new Date(2025, 0, 8);
+    let date1 = new Date(2025, 0, 21);
+    let diff = now - date;
+    let diff1 = now - date1;
+    document.write( '🇺🇸' + '</br>' +
+      'Total: ' + Math.floor(diff/(1000*60*60*24)) + '</br>' + 'Desde ultimo correo: ' + Math.floor(diff1/(1000*60*60*24)))
+
+  </script>
+  
+</body>
+</html>
