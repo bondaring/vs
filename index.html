@@ -3,29 +3,24 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Visa tiempo de espera</title>
+  <title>Document</title>
   <style>
   body {
-    font-family:   Arial, sans-serif;
-    font-size: 2.5em;
+    font-size: 2em;
   }
 </style>
 </head>
 <body>
   <h1 style="font-size: 1em; text-align: center; padding: 0; margin: 0;">tiempo en espera 😫</h1>
+  <h2 style="font-size: 2.5em; text-align: center; padding: 0; margin: 0;">🇺🇸📄</h2>
   <script>
     let now = new Date();
-    let date = new Date(2025, 0, 8, 12, 0, 0);
-    let date1 = new Date(2025, 0, 21, 8, 4, 0);
+    let date = new Date(2025, 0, 8);
+    let date1 = new Date(2025, 0, 21);
     let diff = now - date;
     let diff1 = now - date1;
-    document.write( 
-      '<b>Total:</b> '+ '</br>' + Math.floor(diff/(1000*60*60*24)) + ' dias, '+ '</br>' + 
-      Math.floor((diff/(1000*60*60))%24) + ' horas, '+ '</br>' +
-      Math.floor((diff/(1000*60))%60) + ' min. '
-      + '</br>' + '<b>Desde ultimo correo:</b> '+ '</br>' + Math.floor(diff1/(1000*60*60*24)) + ' dias, '+ '</br>' + Math.floor((diff1/(1000*60*60)%24)) + 
-      ' horas, ' + '</br>' + Math.floor((diff1/(1000*60))%60) +
-      ' min.')
+    document.write( '🇺🇸' + '</br>' +
+      'Total: ' + Math.floor(diff/(1000*60*60*24)) + '</br>' + 'Desde ultimo correo: ' + Math.floor(diff1/(1000*60*60*24)))
 
   </script>
   <div style="height: 2px; background-color: black;"></div>
