@@ -21,10 +21,10 @@
     let diff = now - date;
     let diff1 = now - date1;
     document.write( 
-      '<b>Total:</b> '+ '</br>' + Math.floor(diff/(1000*60*60*24*12)) + ' meses,' + '</br>' + Math.floor(diff/(1000*60*60*24)) + ' dias, '+ '</br>' + 
+      '<b>Total:</b> '+ '</br>' + Math.ceil(diff/(1000*60*60*24*12)) + ' meses,' + '</br>' + Math.floor(diff/(1000*60*60*24)) + ' dias, '+ '</br>' + 
       Math.floor((diff/(1000*60*60))%24) + ' horas, '+ '</br>' +
       Math.floor((diff/(1000*60))%60) + ' min. '
-      + '</br>' + '<b>Desde ultimo correo:</b> '+  '</br>' + Math.floor(diff/(1000*60*60*24*12)) + ' meses,' + '</br>' + Math.floor(diff1/(1000*60*60*24)) + ' dias, '+ '</br>' + Math.floor((diff1/(1000*60*60)%24)) + 
+      + '</br>' + '<b>Desde ultimo correo:</b> '+  '</br>' + Math.ceil(diff/(1000*60*60*24*12)) + ' meses,' + '</br>' + Math.floor(diff1/(1000*60*60*24)) + ' dias, '+ '</br>' + Math.floor((diff1/(1000*60*60)%24)) + 
       ' horas, ' + '</br>' + Math.floor((diff1/(1000*60))%60) +
       ' min.')
 
